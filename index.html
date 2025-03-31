@@ -20,14 +20,15 @@
             <button id="profile_button"><img src="" alt="profile_button"></button>
         </head>
         <main>
-            <div>
+            <div id="main_video">
                 <div>
-                    <iframe min-width="560" min-height="315" width="952" height="537" src="https://www.youtube.com/embed/hvcNUo4_5F4?si=Ftv2yQ7Z74GxSTgt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/hvcNUo4_5F4?si=Ftv2yQ7Z74GxSTgt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p id="video_title">CHEGUEI NO MARROCOS E COMETI UM ERRO 🇲🇦 | REACT!!!!</p>
                     <img id="video_owner" src="" alt="">
                 </div>
                 <div>
-                    <p id="subscribers_counter"></p>
+                    <span>OiSakura</span>
+                    <span id="subscribers_counter">44,5 mil inscritos</span>
                     <button>INSCREVA-SE</button>
 
                     <button id="like_button"></button>
@@ -35,8 +36,8 @@
                     <button id="shared_button"><img id="shared_image" src="" alt="">Compartilhar</button>
                     <button id="download_button"><img id="download_image" src="" alt="">Download</button>
                 </div>
-                <div>
-                    <span id="views_counter"></span><span id="upload_date"></span>
+                <div class="video_details">
+                    <span id="views_counter">1.229 visualizações</span> <span id="upload_date">28 de mar. de 2025</span>
                     <p id="video_description">Vídeo original:    • CHEGUEI NO MARROCOS E COMETI UM ERRO 🇲🇦
                         <br>
                         <br>Me segue: 
@@ -52,68 +53,98 @@
                         
                 </div>
             </div>
-            <aside>
+            <aside id="related_videos">
                 <ul>
                     <li>
-                        <img id="video_thumbnail" src="" alt="">
-                        <p class="video_title">Geração Tech Unimed - BH - Ciência de Dados</p>
-                        <p class="video_owner">DigitalInnovationOne</p>
-                        <p class="views_counter">2,1 mil visualizações</p>
-                        <p class="upload_date">Transmitido há 2 dias</p>
+                        <div class="related_video_thumb">
+                            <img class="video_thumbnail" src="assets/images/Thumb001.png" alt="">
+                        </div>
+                        <div class="related_video_info">
+                            <span class="video_title">Geração Tech Unimed - BH - Ciência de Dados</span>
+                            <span class="video_owner">DigitalInnovationOne</span>
+                            <span class="views_counter">2,1 mil visualizações</span>
+                            <span class="upload_date">Transmitido há 2 dias</span>
+                        </div>
                     </li>
                     <li>
-                        <img id="video_thumbnail" src="" alt="">
-                        <p class="video_title">Scrum Talks</p>
-                        <p class="video_owner">DigitalInnovationOne</p>
-                        <p class="views_counter">1,6 mil visualizações</p>
-                        <p class="upload_date">Transmitido há 3 dias</p>
+                        <div class="related_video_thumb">
+                            <img class="video_thumbnail" src="assets/images/Thumb002.png" alt="">
+                        </div>
+                        <div class="related_video_info">
+                            <span class="video_title">Scrum Talks</span>
+                            <span class="video_owner">DigitalInnovationOne</span>
+                            <span class="views_counter">1,6 mil visualizações</span>
+                            <span class="upload_date">Transmitido há 3 dias</span>
+                        </div>
                     </li>
                     <li>
-                        <img id="video_thumbnail" src="" alt="">
-                        <p class="video_title">Machine Learning Avançado - Fast Track</p>
-                        <p class="video_owner">DigitalInnovationOne</p>
-                        <p class="views_counter">1,7 mil visualizações</p>
-                        <p class="upload_date">Transmitido há 4 dias</p>
+                        <div class="related_video_thumb">
+                            <img class="video_thumbnail" src="assets/images/Thumb003.png" alt="">
+                        </div>
+                        <div class="related_video_info">
+                            <span class="video_title">Machine Learning Avançado - Fast Track</span>
+                            <span class="video_owner">DigitalInnovationOne</span>
+                            <span class="views_counter">1,7 mil visualizações</span>
+                            <span class="upload_date">Transmitido há 4 dias</span>
+                        </div>
                     </li>
                     <li>
-                        <img id="video_thumbnail" src="" alt="">
-                        <p class="video_title"></p>
-                        <p class="video_owner">DigitalInnovationOne</p>
-                        <p class="views_counter"></p>
-                        <p class="upload_date"></p>
+                        <div class="related_video_thumb">
+                            <img class="video_thumbnail" src="assets/images/Thumb004.png" alt="">
+                        </div>
+                        <div class="related_video_info">
+                            <span class="video_title">Global Skills #2 - Project Planning</span>
+                            <span class="video_owner">DigitalInnovationOne</span>
+                            <span class="views_counter">971 visualizações</span>
+                            <span class="upload_date">Transmitido há 5 dias</span>
+                        </div>
                     </li>
                     <li>
-                        <img id="video_thumbnail" src="" alt="">
-                        <p class="video_title"></p>
-                        <p class="video_owner">DigitalInnovationOne</p>
-                        <p class="views_counter"></p>
-                        <p class="upload_date"></p>
+                        <div class="related_video_thumb">
+                            <img class="video_thumbnail" src="assets/images/Thumb005.png" alt="">
+                        </div>
+                        <div class="related_video_info">
+                            <span class="video_title">Como aprender a programar Python do ZERO</span>
+                            <span class="video_owner">DigitalInnovationOne</span>
+                            <span class="views_counter">711 visualizações</span>
+                            <span class="upload_date">Transmitido há 6 dias</span>
+                        </div>
                     </li>
                     <li>
-                        <img id="video_thumbnail" src="" alt="">
-                        <p class="video_title">Global Skills #2 - Project Planning</p>
-                        <p class="video_owner">DigitalInnovationOne</p>
-                        <p class="views_counter">971 visualizações</p>
-                        <p class="upload_date">Transmitido há 5 dias</p>
+                        <div class="related_video_thumb">
+                            <img class="video_thumbnail" src="assets/images/Thumb001.png" alt="">
+                        </div>
+                        <div class="related_video_info">
+                            <span class="video_title">Global Skills #2 - spanroject spanlanning</span>
+                            <span class="video_owner">DigitalInnovationOne</span>
+                            <span class="views_counter">971 visualizações</span>
+                            <span class="upload_date">Transmitido há 5 dias</span>
+                        </div>
                     </li>
                     <li>
-                        <img id="video_thumbnail" src="" alt="">
-                        <p class="video_title"></p>
-                        <p class="video_owner">DigitalInnovationOne</p>
-                        <p class="views_counter"></p>
-                        <p class="upload_date"></p>
+                        <div class="related_video_thumb">
+                            <img class="video_thumbnail" src="assets/images/Thumb002.png" alt="">
+                        </div>
+                        <div class="related_video_info">
+                            <span class="video_title">Scrum Talks</span>
+                            <span class="video_owner">DigitalInnovationOne</span>
+                            <span class="views_counter">1,6 mil visualizações</span>
+                            <span class="upload_date">Transmitido há 3 dias</span>
+                        </div>
                     </li>
                     <li>
-                        <img id="video_thumbnail" src="" alt="">
-                        <p class="video_title">Como aprender a programar Python do ZERO</p>
-                        <p class="video_owner">DigitalInnovationOne</p>
-                        <p class="views_counter">711 visualizações</p>
-                        <p class="upload_date">Transmitido há 6 dias</p>
+                        <div class="related_video_thumb">
+                            <img class="video_thumbnail" src="assets/images/Thumb003.png" alt="">
+                        </div>
+                        <div class="related_video_info">
+                            <span class="video_title">Como aprender a programar Python do ZERO</span>
+                            <span class="video_owner">DigitalInnovationOne</span>
+                            <span class="views_counter">711 visualizações</span>
+                            <span class="upload_date">Transmitido há 6 dias</span>
+                        </div>
                     </li>
                 </ul>
             </aside>
-
-
         </main>
     </div>
     
