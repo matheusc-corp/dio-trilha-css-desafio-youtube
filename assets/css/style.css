@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #container {
     min-width: 500px;
+    font-family: Roboto;
+    font-size: 14px;
 
 }
 
@@ -77,21 +86,22 @@
 
 main {
     min-width: 550px;
-    /* width: 1440px; */
+    /* width: 1400px; */
     display: flex;
     flex-wrap: wrap;
     padding: 40px 50px;
 
-
-    border: solid 2px blue;
+    /* border: solid 2px blue; */
 }
 
 #main_video {
     min-width: 500px;
     width: 900px;
-    border: solid 2px red;
     flex: 2 1 auto;
     margin: 0px 20px;
+
+    
+    /* border: solid 2px red; */
 }
 
 #main_video div iframe {
@@ -100,13 +110,131 @@ main {
 }
 
 #video_title {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.video-interactions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;    
+
+    /* border: 1px solid red; */
+}
+
+#video_owner {
+    border-radius: 50%;
+}
+
+.channel-interactions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.owner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    /* border: 1px solid aqua; */
+}
+
+.owner-name {
     font-weight: 900;
+    cursor: pointer;
+}
+
+.channel-interactions > button {
+    border: none;
+    background-color: #000;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 30px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+
+}
+
+.channel-interactions > button:hover {
+    background-color: gainsboro;
+    color: #000;
+}
+
+.video-interactions-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.video-interactions-button > button {
+    border: none;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #000;
+    border-radius: 30px;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.video-interactions-button > button:hover {
+    background-color: gainsboro;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.liked-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+}
+
+.pipe {
+    font-size: 1.5rem;
+}
+
+#like_button, #dislike_button {
+    background: none;
+    border: none;
+    width: 50px;
+    cursor: pointer;
+    
+}
+
+#like_button > img, #dislike_button > img {
+    width: 20px;
+}
+
+#like_button:hover {
+    background-color: gainsboro;
+    border-radius: 20px 0 0 20px;
+    padding: 5px;
+}
+
+#dislike_button:hover {
+    background-color: gainsboro;
+    border-radius: 0 20px 20px 0;
+    padding: 5px;
 }
 
 .video_details {
     background-color: lightgray;
     border-radius: 5px;
     margin-top: 20px;
+    padding: 1rem;
 }
 
 .video_details span {
@@ -119,8 +247,7 @@ main {
     flex: 1 1 auto;
     margin: 0px 20px;
 
-
-    border: solid 2px aqua;
+    /* border: solid 2px aqua; */
 }
 
 #related_videos ul {
@@ -130,8 +257,9 @@ main {
 }
 
 #related_videos li {
-    height: 100px;
+    height: 90px;
     display: flex;
+    margin: 12px;
 
 }
 
@@ -151,4 +279,8 @@ main {
 
 .video_title {
     font-weight: 900;
+}
+
+#related_videos > ul > li {
+    cursor: pointer;
 }

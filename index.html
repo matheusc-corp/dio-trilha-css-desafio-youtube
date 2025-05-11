@@ -30,23 +30,34 @@
         </header>
         <main>
             <div id="main_video">
-                <div>
+                <div class="video-info">
                     <iframe src="https://www.youtube.com/embed/hvcNUo4_5F4?si=Ftv2yQ7Z74GxSTgt"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p id="video_title">CHEGUEI NO MARROCOS E COMETI UM ERRO 🇲🇦 | REACT!!!!</p>
-                    <img id="video_owner" src="" alt="">
+                    <p id="video_title">CHEGUEI NO MARROCOS E COMETI UM ERRO 🇲🇦 | REACT!!!!</p>                    
                 </div>
-                <div>
-                    <span>OiSakura</span>
-                    <span id="subscribers_counter">44,5 mil inscritos</span>
-                    <button>INSCREVA-SE</button>
+                <div class="video-interactions">
+                    <div class="channel-interactions">
+                        <img id="video_owner" src="assets/images/channels-profile.jpg" alt="">
+                        
+                        <span class="owner">
+                            <span class="owner-name">OiSakura</span>
+                            <span id="subscribers_counter">44,5 mil inscritos</span>
+                        </span>
+                        
+                        <button>INSCREVA-SE</button>
+                    </div>
 
-                    <button id="like_button"></button>
-                    <button id="dislike_button"><img id="dislike_image" src="" alt="">Não gostei</button>
-                    <button id="shared_button"><img id="shared_image" src="" alt="">Compartilhar</button>
-                    <button id="download_button"><img id="download_image" src="" alt="">Download</button>
+                    <div class="video-interactions-button">
+                        <span class="liked-buttons">
+                            <button id="like_button"><img src="assets/images/thumbs-up.svg" alt=""></button>
+                            <span class="pipe">|</span>
+                            <button id="dislike_button"><img id="dislike_image" src="assets/images/thumbs-down.svg" alt=""></button>
+                        </span>
+                        <button id="shared_button"><img id="shared_image" src="assets/images/share-button.svg" alt="">Compartilhar</button>
+                        <button id="download_button"><img id="download_image" src="assets/images/download-button.svg" alt="">Download</button>
+                    </div>
                 </div>
                 <div class="video_details">
                     <span id="views_counter">1.229 visualizações</span><span id="upload_date">28 de mar. de 2025</span>
