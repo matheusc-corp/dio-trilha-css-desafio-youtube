@@ -1,28 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Youtube - Assistindo video</title>
 </head>
+
 <body>
     <div id="container">
-        <head>
-            <div id="menu"></div>
-            <img src="" alt="Youtube logo">
+        <header>
+            <div id="menu">
+                <div class="logo">
+                    <img src="assets/images/youtube-logo-vector-1.svg" alt="Youtube logo">
+                </div>
 
-            <input type="text" id="search_bar" name="search-bar">
-            <button id="search_button"><img src="" alt="search_button"></button>
+                <div class="search">
+                    <input type="text" id="search_bar" name="search-bar" placeholder="Pesquisar">
+                    <button id="search_button"><img src="assets/images/search-icon.png" alt="search_button"></button>
+                </div>
 
-            <button id="live_button"><img src="" alt="live_button"></button>
-            <button id="notifications_button"><img src="notifications_button" alt=""></button>
-            <button id="profile_button"><img src="" alt="profile_button"></button>
-        </head>
+                <div class="user">
+                    <button id="creation_button">+ Criar</button>
+                    <button id="notifications_button"><img src="assets/images/notification-bell.png" alt=""></button>
+                    <button id="profile_button"><img src="assets/images/user-icon.png" alt="profile_button"></button>
+                </div>
+            </div>
+        </header>
         <main>
             <div id="main_video">
                 <div>
-                    <iframe src="https://www.youtube.com/embed/hvcNUo4_5F4?si=Ftv2yQ7Z74GxSTgt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/hvcNUo4_5F4?si=Ftv2yQ7Z74GxSTgt"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p id="video_title">CHEGUEI NO MARROCOS E COMETI UM ERRO 🇲🇦 | REACT!!!!</p>
                     <img id="video_owner" src="" alt="">
                 </div>
@@ -37,20 +49,20 @@
                     <button id="download_button"><img id="download_image" src="" alt="">Download</button>
                 </div>
                 <div class="video_details">
-                    <span id="views_counter">1.229 visualizações</span> <span id="upload_date">28 de mar. de 2025</span>
-                    <p id="video_description">Vídeo original:    • CHEGUEI NO MARROCOS E COMETI UM ERRO 🇲🇦
+                    <span id="views_counter">1.229 visualizações</span><span id="upload_date">28 de mar. de 2025</span>
+                    <p id="video_description">Vídeo original: • CHEGUEI NO MARROCOS E COMETI UM ERRO 🇲🇦
                         <br>
-                        <br>Me segue: 
-                        <br>Twitch:   / <a href="#">oisakura</a>
-                        <br>Instagram:   / <a href="#">0isakura</a>
-                        <br>X:   / <a href="#">oisakura</a>
+                        <br>Me segue:
+                        <br>Twitch: / <a href="#">oisakura</a>
+                        <br>Instagram: / <a href="#">0isakura</a>
+                        <br>X: / <a href="#">oisakura</a>
                         <br>Discord: <a href="#">https://bit.ly/3thpSeY</a>
                         <br>Site: <a href="#">https://www.oisakura.com</a>
-                        <br>Contato: contato@oisakura.com 
+                        <br>Contato: contato@oisakura.com
                         <br>
-                        <br>Torne-se Membro da Sakuda:    / <a href="#">@oisakuraa</a>
+                        <br>Torne-se Membro da Sakuda: / <a href="#">@oisakuraa</a>
                         <br>
-                        
+
                 </div>
             </div>
             <aside id="related_videos">
@@ -147,6 +159,7 @@
             </aside>
         </main>
     </div>
-    
+
 </body>
+
 </html>
